@@ -1,0 +1,37 @@
+
+<div id="main" align="center">
+	<h1>FX-u-like</h1>
+	<form action = '/process/' method = "POST">
+		<table>
+			<tr>
+				<td>Date:</td>
+				<td><input type="date" name="date" value=<%= date %>></td>
+			</tr>
+			<tr>
+				<td>Amount:</td>
+				<td><input type="number" name="amount" value=<%= amount %>></td>
+			</tr>
+			<tr>
+				<td>From:</td>
+				<td>
+					<select name="from_ccy">
+						<%= currencies %>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>To:</td>
+				<td>
+					<select name="to_ccy">
+						<%= currencies %>
+					</select>
+				</td>
+			</tr>
+			<tr><td></td><td><input type="submit" value="Convert"></td>
+			</tr>
+			<tr>
+				<td colspan="2">Result: <%= result %></td>
+			</tr>
+		</table>
+	</form>
+</div>
