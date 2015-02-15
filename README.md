@@ -1,0 +1,2 @@
+# Currency-Converter-Web-App
+This repository contains a currency converter basic web app written in ruby, using 'sinatra' framework for web scripting in Ruby language. Currencies are screen-scraped from official European Bank website. Also, the currency could be converted to any other currency available with several rates corresponding to different days. The app keeps track of all the rates in the last 90 days in realtime.
